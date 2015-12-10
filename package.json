@@ -1,0 +1,22 @@
+{
+  "name": "blackhole",
+  "version": "1.0.0",
+  "description": "Un script qui télécharge toutes les données contenues par sur site Web pour les sauvegarder",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/didouard/blackhole.git"
+  },
+  "author": "Edouard FERRARI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/didouard/blackhole/issues"
+  },
+  "homepage": "https://github.com/didouard/blackhole#readme",
+  "dependencies": {
+    "myasync-eferrari": "^1.0.0"
+  }
+}

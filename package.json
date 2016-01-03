@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/didouard/blackhole#readme",
   "dependencies": {
+    "mkdirp": "^0.5.1",
     "myasync-eferrari": "^1.0.0"
   }
 }

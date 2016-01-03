@@ -1,16 +1,9 @@
-var async   = require("myasync-eferrari");
-var request = require("./libs/request.js");
+var Page = require("./libs/Page.js");
 
 var config  = require("./config.json");
 
-var downloadImage = function (data, callback) {
-  if (!data.url) return callback(new Error("Insert image url in data.url"));
-  console.log("Start :", data.url);
-  
-  request(data, callback);
-};
-
-async.parallel(config.images, downloadImage, function (err, results) {
+var page = new Page(config);
+page.start(null, function (err, result) {
   if (err) console.error(err);
-    console.log("All Download ended, results : ", results.length);
+  console.log("Fini", page.getUrl());
 });
